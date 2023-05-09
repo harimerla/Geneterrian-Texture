@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "es2017",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "@webgpu/types"
+    ],
+    "module": "commonjs",
+    //"module": "Node16",
+    "esModuleInterop": true,
+    "strict": true,
+    "preserveConstEnums": true,
+    "sourceMap": true
+  },
+  "moduleResolution": "node",
+  "paths": {
+    "gl-matrix": ["./node_modules/gl-matrix/gl-matrix-min.js"]
+  },
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"]
+},
+}

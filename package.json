@@ -1,0 +1,48 @@
+{
+  "name": "webgpu-webpack-starter",
+  "version": "1.0.0",
+  "description": "A starter template for WebGPU development the uses webpack to build the code and manage dependencies.",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack server",
+    "deploy": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twinklebear/webgpu-webpack-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Twinklebear/webgpu-webpack-starter/issues"
+  },
+  "homepage": "https://github.com/Twinklebear/webgpu-webpack-starter#readme",
+  "devDependencies": {
+    "@types/gl-matrix": "^3.2.0",
+    "@webgpu/types": "^0.1.30",
+    "buffer": "^6.0.3",
+    "gl-matrix": "^3.4.3",
+    "html-webpack-plugin": "^5.3.2",
+    "jpeg-js": "^0.4.4",
+    "ts-loader": "^9.4.2",
+    "tsconfig-paths": "^4.1.2",
+    "typescipt": "^1.0.0",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  },
+  "dependencies": {
+    "3d-view-controls": "^2.2.2",
+    "browserify-fs": "^1.0.0",
+    "deno": "^0.1.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "@modules": "build/modules",
+    "@core": "build/core"
+  }
+}
